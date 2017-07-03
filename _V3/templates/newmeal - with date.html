@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>New Meal</title>
+		<meta http-equiv="Expires" content="0">
+    </head>
+    <body>
+		<h1><u>NEW MEAL</u></h1>
+		<form method="post" action="{{ url_for('mealthankyou') }}" enctype="multipart/form-data">
+		
+			<h2>Meal Date</h2>
+			<input type="date" name="mealdate" value="07/15/2017"><br>
+			
+			<h2>Meal Type</h2>
+			<input type="radio" name="mealtype" value="breakie" checked="checked" /><b>Breakie
+			<input type="radio" name="mealtype" value="lunch" />Lunch
+			<input type="radio" name="mealtype" value="dinner" />Dinner
+			<br>
+  
+			<h2>Calories (0 - 3000)</h2>
+			<input type="number" name="calories" min="0" max="3000" value= "1000" step="50"><br>
+			
+			<h2>Meal Description</h2>
+			<input type="text" name="description" style="width: 500px; height: 50px"><br>
+
+			
+		  <input type="submit" value="SUBMIT"/>
+		</form>
+
+	</body>
+</html>
+ 
